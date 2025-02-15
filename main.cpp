@@ -11,10 +11,14 @@ int main() {
     Card C4("yelow", "9");
     Card C5("blue", "#");
 
-    cout<< C1.getId() << "is wilcard? " << (C1.IsWild() ? "yes": "no") <<endl;
-    cout<< C2.getId() << "is wilcard? " << (C2.IsWild() ? "yes": "no") <<endl;
-    cout<< C3.getId() << "is wilcard? " << (C3.IsWild() ? "yes": "no") <<endl;
-    cout<< C4.getId() << "is wilcard? " << (C4.IsWild() ? "yes": "no") <<endl;
-    cout<< C5.getId() << "is wilcard? " << (C5.IsWild() ? "yes": "no") <<endl;
+    /*Deck drawDeck;
+
+    drawDeck.insertCardDeck(C1);
+    drawDeck.insertCardDeck(C2);
+    drawDeck.insertCardDeck(C3);
+    drawDeck.showDesk();
+    drawDeck.insertCardDeck(C4);
+    drawDeck.insertCardDeck(C5);
+    drawDeck.showDesk();*/
     return 0;
 }
