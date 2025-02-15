@@ -5,20 +5,22 @@ using namespace std;
 
 class Card
 {
-friend class Deck;
+
 private:
     static int CounterCards;
     string colorCard;
-    int numberCard;
+    string numberCard;
     int id;
+    bool Wildcard;
 public:
     Card(){};
-    Card(string color, int number);
+    Card(string color, string number);
     ~Card();
     void ShowCard();
-    int getNumber();
+    string getNumber();
     string getColor();
     int getId();
+    bool IsWild();
 };
 
 #endif

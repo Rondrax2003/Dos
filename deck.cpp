@@ -20,7 +20,9 @@ void Deck::insertCardDeck(Card NewCard){
     size++;       
 }
 
-void Deck::showDesk(){
+void Deck::showDesk()
+{
+    cout<< "cards in the deck: "<<endl;
     for(int i=0; i<size; i++)
     {
         DeskCards[i].ShowCard();
