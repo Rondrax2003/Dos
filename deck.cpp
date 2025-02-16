@@ -1,5 +1,7 @@
 #include <iostream>
 #include <string>
+#include <cstdlib>
+#include <ctime>
 #include "card.h"
 #include "deck.h"
 using namespace std;
@@ -28,4 +30,16 @@ void Deck::showDesk()
         DeskCards[i].ShowCard();
     }
 
+}
+
+void Deck::shuffle()
+{
+    cout << "shuffling cards..."<<endl;
+    srand(time(0));
+    for (int i = 0; i < size; i++){
+        int j = rand() % size;
+        Card temp = DeskCards[i];
+        DeskCards[i] = DeskCards[j];
+        DeskCards[j] = temp;
+    }
 }

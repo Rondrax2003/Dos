@@ -11,14 +11,16 @@ int main() {
     Card C4("yelow", "9");
     Card C5("blue", "#");
 
-    /*Deck drawDeck;
+    Deck drawDeck;
 
     drawDeck.insertCardDeck(C1);
     drawDeck.insertCardDeck(C2);
     drawDeck.insertCardDeck(C3);
-    drawDeck.showDesk();
     drawDeck.insertCardDeck(C4);
     drawDeck.insertCardDeck(C5);
-    drawDeck.showDesk();*/
+    drawDeck.showDesk();
+
+    drawDeck.shuffle();
+    drawDeck.showDesk();
     return 0;
 }

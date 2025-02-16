@@ -13,6 +13,7 @@ public:
     Deck ();
     void insertCardDeck(Card NewCard);
     void showDesk();
+    void shuffle();
 
 };
 
